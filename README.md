@@ -20,7 +20,7 @@ and checks the hash against a data structure for any hash collisions.
 Nothing!  Written with love by one of your UA Technology System Group Chairs.  Hope you have a good experience with it :)
 
 All of the signups stay local to the machine that it is running on so we're not selling poor freshmen's email addresses
-to marketers, or worse, Comcast recruitors.
+to marketers, or worse, Comcast recruiters.
 
 ## What's this fuss and muss you speak of with other solutions?
 The other solutions I am considering are 1) pen/paper, 2) excel, 3) google form.
