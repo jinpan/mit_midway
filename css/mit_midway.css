@@ -1,0 +1,48 @@
+html {
+    background-image:url("grey_wash_wall.png");
+    background-repeat: repeat;
+    
+    font-family: sans-serif;
+}
+
+.boxy {
+    display: block;
+    margin-left: auto; margin-right: auto;
+    left: 0; right: 0; 
+}
+
+#boxy1 {
+    margin-top: 20%;
+    height: 40px;
+    width: 700px;
+}
+
+#boxy2 {
+    margin-top: 20%;
+    height: 40px;
+    width: 400px;
+}
+
+#boxy3 {
+    margin-top: 20%;
+    height: 80px;
+    width: 605px;
+}
+
+#boxy1 > h1 {
+    color: #DDD;
+    text-shadow: 1px 1px #222;
+}
+
+#boxy3 > h1 {
+    color: #DDD;
+    text-shadow: 1px 1px #222;
+}
+
+.valid-true {
+    color: green;
+}
+
+.valid-false {
+    color: red;
+}

@@ -1,0 +1,34 @@
+<!doctype html>
+<html ng-app ng-controller="MasterControl" ng-init="init()">
+    <head>
+        <link rel="stylesheet" type="text/css" href="css/semantic.css">
+        <link rel="stylesheet" type="text/css" href="css/mit_midway.css">
+
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <script type="text/javascript" src="js/md5.js"></script>
+        <script type="text/javascript" src="js/angular.js"></script>
+        <script type="text/javascript" src="js/semantic.js"></script>
+        <script type="text/javascript" src="js/mit_midway.js"></script>
+        <script type="text/javascript" src="js/kerb_hashes.js"></script>
+    </head>
+    <body>
+        <div id="boxy3" class="boxy">
+            <h1>
+                2014 Midway Signups for Traders@MIT
+                <hr>
+                {{kerberoses.length}} responses
+            </h1>
+        </div>
+        <div id="boxy2" class="boxy">
+            <table class="ui large table segment">
+                <tbody>
+                    <tr ng-repeat="kerberos in kerberoses">
+                        <td>{{kerberos}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </body>
+</html>
+
