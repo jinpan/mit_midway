@@ -46,7 +46,6 @@ function MasterControl($scope) {
         } else {
             kerberoses = jQuery.parseJSON(localStorage.getItem("kerberoses"));
         }
-        console.log(kerberoses);
 
         if (jQuery.inArray(kerberos, kerberoses) < 0) {
             kerberoses.push(kerberos);
