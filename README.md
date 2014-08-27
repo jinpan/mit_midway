@@ -30,14 +30,14 @@ The other solutions I am considering are 1) pen/paper, 2) excel, 3) google form.
 3. Google form:  Wifi sometimes craps out in the ice rink.  Also, no kerberos validation :disappointed:
 
 ## This is ugly and atrocious.  I can't believe your grotesque sense of style.
-Released under MIT license, feel free to make it prettier.  Feel free to send me a pull request if you'd like to share.
+Released under MIT license, feel free to make it prettier!  Pull requests are welcome if you'd like to share.
 
 ## I don't want to recruit for Traders@MIT.  Why are you making me recruit for Traders@MIT?
 Full disclosure, I'm also co-president of Traders@MIT and partially made this app for Traders.  However, none of the code
-is specific to that organization so simply do a find/replace for Traders@MIT/<your club name> on the following files/lines:
+is specific to that organization.  Simply do a find/replace for Traders@MIT/<your club name> on the following files/lines:
 
 >index.html:17:                I'm interested in signing up for Traders@MIT!
 >index.html:46:                    <p>You're all signed up for Traders@MIT!</p>
 >results.html:17:                2014 Midway Signups for Traders@MIT
 
-You may also want to adjust some of the magic constants in the css if elements seem misaligned.
+and you should be good to go!  You may also want to adjust some of the magic constants in the css if some elements seem misaligned.
