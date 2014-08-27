@@ -24,9 +24,10 @@ to marketers, or worse, Comcast recruitors.
 
 ## What's this fuss and muss you speak of with other solutions?
 The other solutions I am considering are 1) pen/paper, 2) excel, 3) google form.
-1) Pen/Paper: handwriting can be messy, people like to disappear with pens.
-2) Excel: it's cramped and ugly.  Also, no kerberos validation, which makes typos unfortunate.
-3) Google form:  wifi sometimes craps out in the ice rink.  Also, no kerberos validation
+
+1. Pen/Paper: Handwriting can be messy, people like to disappear with pens.
+2. Excel: It's cramped and ugly.  Also, no kerberos validation, which makes typos unfortunate.
+3. Google form:  Wifi sometimes craps out in the ice rink.  Also, no kerberos validation :disappointed:
 
 ## This is ugly and atrocious.  I can't believe your grotesque sense of style.
 Released under MIT license, feel free to make it prettier.  Feel free to send me a pull request if you'd like to share.
