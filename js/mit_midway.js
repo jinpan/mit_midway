@@ -1,4 +1,4 @@
-function MasterControl($scope, $interval) {
+function MasterControl($scope, $interval, $timeout) {
     $scope.kerberoses = [];
     $scope.referrers = [];
 
@@ -24,9 +24,12 @@ function MasterControl($scope, $interval) {
     }
 
     $scope.enter = function(keyEvent) {
+        //  keyEvent undefined covers the mouse case; keyEvent.which === 13
+        //  covers the enter case
         if ((keyEvent === undefined) || (keyEvent.which === 13)) {
 
-            if ($scope.isValidKerberos($scope.kerberos)) {
+            if ($scope.isValidKerberos($scope.kerberos)
+                || keyEvent === undefined) {  // either is valid or click to override
                 // success!
                 $scope.save($scope.kerberos, $scope.referrer);
 
@@ -35,6 +38,10 @@ function MasterControl($scope, $interval) {
                 $scope.referrer = "";
 
                 jQuery('#success').dimmer('show');
+                
+                $timeout(function() {
+                    jQuery('#success').dimmer('hide');
+                }, 1000);
             }
         }
     }
