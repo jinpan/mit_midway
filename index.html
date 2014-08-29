@@ -18,18 +18,33 @@
             </h1>
         </div>
         <div id="boxy2" class="boxy">
-            <div class="ui action input">
+            <div class="ui action fluid input">
                 <input placeholder="my_kerberos" type="text"
                        ng-model="kerberos" ng-model-instant
                        ng-keypress="enter($event)">
                 <div class="ui green right labeled icon button"
-                     ng-if="isValidKerberos()" ng-click="enter()">
+                     ng-if="isValidKerberos(kerberos)" ng-click="enter()">
                     <i class="right arrow icon"></i>
                     @mit.edu
                 </div>
                 <div class="ui red right labeled icon button"
-                     ng-if="!isValidKerberos()" ng-click="enter()">
+                     ng-if="!isValidKerberos(kerberos)" ng-click="enter()">
                     <i class="right arrow icon"></i>
+                    @mit.edu
+                </div>
+            </div>
+
+            <br>
+            <div class="ui action fluid input">
+                <input type="text" placeholder="I was referred by..."
+                       ng-model="referrer" ng-model-instant
+                       ng-keypress="enter($event)">
+                <div class="ui green button"
+                    ng-if="isValidKerberos(referrer)">
+                    @mit.edu
+                </div>
+                <div class="ui red button"
+                    ng-if="!isValidKerberos(referrer)">
                     @mit.edu
                 </div>
             </div>

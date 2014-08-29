@@ -21,9 +21,16 @@
         </div>
         <div id="boxy2" class="boxy">
             <table class="ui large table segment">
+                <thead>
+                    <tr>
+                        <th>Kerberos</th>
+                        <th>Referrer</th>
+                    </tr>
+                </thead>
                 <tbody>
                     <tr ng-repeat="kerberos in kerberoses">
                         <td>{{kerberos}}</td>
+                        <td>{{referrers[$index]}}</td>
                     </tr>
                 </tbody>
             </table>
