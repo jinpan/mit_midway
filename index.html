@@ -14,7 +14,7 @@
     <body>
         <div id="boxy1" class="boxy">
             <h1>
-                I'm interested in signing up for Traders@MIT!
+                Trading Fundamentals Crash Course Signins
             </h1>
         </div>
         <div id="boxy2" class="boxy">
@@ -34,31 +34,14 @@
                 </div>
             </div>
 
-            <br>
-            <div class="ui action fluid input">
-                <input type="text" placeholder="I was referred by..."
-                       ng-model="referrer" ng-model-instant
-                       ng-keypress="enter($event)">
-                <div class="ui green button"
-                    ng-if="isValidKerberos(referrer)">
-                    @mit.edu
-                </div>
-                <div class="ui red button"
-                    ng-if="!isValidKerberos(referrer)">
-                    @mit.edu
-                </div>
-            </div>
-        </div>
-
         <div id="success" class="ui page dimmer">
             <div class="content">
                 <div class="center">
                     <h2 class="ui inverted icon header">
                         <i class="green circular inverted checked checkbox icon">
                         </i>
-                        Thanks {{last_kerberos}}!
+                        Thanks for signing in, {{last_kerberos}}!
                     </h2>
-                    <p>You're all signed up for Traders@MIT!</p>
                 </div>
             </div>
         </div>
